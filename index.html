@@ -37,12 +37,24 @@
                 .linediv-r {
                     border-top: 1px white solid;
                 }
+               
+                .span2{
+                    width: 48%!important;
+                }
+                .feature{
+                    float:left!important;
+                    margin: 2%;
+                }
+                .section2{
+                    display:none;
+                }
             }
             /* All form factors */
 
             /* Main body and headings */
             body{
                 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+                background: #f9f9f9;
             }
             .heading, .subheading {
                 font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -75,7 +87,31 @@
                 color: white;
             }
 
+            /* slider */
+
+            .slider{
+                margin: 3% 0%;
+                height: 300px;
+                background: #cccccc;
+            }
+
+
             /* Marketing Copy and Footer */
+            .section1{
+                margin-bottom: 3%;
+            }
+            .description{
+                padding: 5%;
+            }
+
+            .feature{
+                background: #fff;
+                border-bottom-left-radius: 10px; 
+                border-bottom-right-radius: 10px; 
+                box-shadow: 5px 5px 5px #BBB;
+              
+            }
+
             .copy {
                 padding-top: 2.5%;
                 padding-bottom: 2.5%;
@@ -129,18 +165,18 @@
             <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
             <div class="row-fluid heading">
                 <div class="span12">
-                    <h1>Product</h1>
+                    <h1>Needs</h1>
                 </div>
             </div> 
-            
+
             <div class="row-fluid subheading">
                 <div class="span12">
                     <!-- Special typography from Bootstrap for lead paragraph. -->
                     <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-                    <p class="lead">One sentence description.</p>
+                    <p class="lead">Find the people who need your services.</p>
                 </div>
             </div>
-            
+
             <div class="row-fluid pitch">
                 <div class="span5 offset1 video">
                     <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -160,12 +196,12 @@
                             </div>
                             <div class="span4">
                                 <div class="linediv-c">
-                                    <h3>$6000</h3> <p>of $10,000</p>
+                                    <h3>$6000</h3> <p>of $60,000</p>
                                 </div>
                             </div>
                             <div class="span4">
                                 <div class="linediv-r">
-                                    <h3>10</h3> <p>days left</p>
+                                    <h3>180</h3> <p>days left</p>
                                 </div>
                             </div>
                         </div>
@@ -191,31 +227,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="slider">
             
-            <!-- Beyond this part the marketing copy begins. -->
-            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-            <!-- http://placehold.it -->
+        </div>
+
+        <!-- Beyond this part the marketing copy begins. -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+        <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+        <!-- http://placehold.it -->
+        <div class="container">   
             <div class="row-fluid section1">
-                <div class="span5 offset1 asset">
-                    <img class="img-polaroid" src="http://placehold.it/480x300">
-                </div>
-                <div class="span5 copy">
-                    <p>
+                
+                <div class="span2 offset1 feature">
+                    <img class="img-polaroid" src="http://placehold.it/160x160">
+                    <div class="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-                        mollis justo velit at nunc. Fusce nec egestas sem. Donec
-                        fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-                        volutpat lorem ut congue malesuada. In facilisis scelerisque
-                        turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-                        quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-                        risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-                        rutrum, nunc leo tempus nisl, eu mollis justo velit at
-                        nunc. Fusce nec egestas sem. Donec fringilla.
-                    </p>
+                        porta, dui sagittis hendrerit rutrum.
+                    </div>
+                </div>
+                <div class="span2 feature">
+                    <img class="img-polaroid" src="http://placehold.it/160x160">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum.
+                    </div>
+                </div>
+                <div class="span2 feature">
+                    <img class="img-polaroid" src="http://placehold.it/160x160">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum.
+                    </div>
+                </div>
+                <div class="span2 feature">
+                    <img class="img-polaroid" src="http://placehold.it/160x160">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum.
+                    </div>
+                </div>
+                <div class="span2 feature">
+                    <img class="img-polaroid" src="http://placehold.it/160x160">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum.
+                    </div>
                 </div>
             </div>
+
 
             <div class="row-fluid section2">
                 <div class="span5 offset1 copy copy-right">
@@ -286,7 +347,7 @@
                         put at the bottom of the page.</p>
                 </div>
             </div>
-            
+
         </div>
     </body>
 </html>
